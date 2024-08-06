@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malikCoin</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        #btn {
+            background-image: url(/ag.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <main
+        style="width: 100%; min-height: 100vh; background-color: aqua; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+        <p id="txt">0</p>
+        <button id="btn" style="width: 7rem; height: 7rem; margin-top: 50px; border-radius: 100%;">TAP!</button>
+    </main>
+    <script>
+        let count = 0
+        const button = document.getElementById("btn")
+        const txt = document.getElementById("txt")
+        button.addEventListener("click", () => {
+            count += 1000000 
+            txt.innerHTML = "#" + count
+        })
+    </script>
+</body>
+
+</html>
